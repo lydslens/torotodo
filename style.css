@@ -94,3 +94,33 @@ body.dark-mode #todo-list li {
 body.dark-mode .reminder-text {
     color: #ccc;
 }
+
+/* Black and White Mode */
+body.bw-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+body.bw-mode .container {
+    background-color: #eee;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+body.bw-mode #todo-input {
+    background-color: #fff;
+    color: #000;
+    border-color: #999;
+}
+
+body.bw-mode #add-todo {
+    background-color: #000;
+    color: #fff;
+}
+
+body.bw-mode #todo-list li {
+    border-bottom-color: #999;
+}
+
+body.bw-mode .reminder-text {
+    color: #333;
+}
