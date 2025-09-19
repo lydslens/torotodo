@@ -7,12 +7,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Theme switcher
     themeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        // Update button text
         if (document.body.classList.contains('dark-mode')) {
+            // Switch to B&W mode
+            document.body.classList.remove('dark-mode');
+            document.body.classList.add('bw-mode');
             themeToggle.textContent = 'Toggle Light Mode';
-        } else {
+        } else if (document.body.classList.contains('bw-mode')) {
+            // Switch to Light mode
+            document.body.classList.remove('bw-mode');
             themeToggle.textContent = 'Toggle Dark Mode';
+        } else {
+            // Switch to Dark mode
+            document.body.classList.add('dark-mode');
+            themeToggle.textContent = 'Toggle B&W Mode';
         }
     });
 
